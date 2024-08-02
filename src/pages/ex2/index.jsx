@@ -17,6 +17,25 @@ export default function Exercicio2() {
                 </div>
             </header>
 
+            <main>
+                <section className='titulo'>
+                    <Link to='/'><img src="/assets/images/seta esquerda.png" alt="" /></Link>
+                    <h1>Exercício 02 - Converter Kg/gramas</h1>
+                </section>
+                <section className='descricao'>
+                    <p>Implementar um programa em JavaScript para converter kilos em gramas</p>
+                </section>
+                
+                <section className='aplicacao'>
+                    <h4>Valor em gramas</h4>
+                    <input type="text" placeholder='0' />
+                    <h4 className='botao'>Executar</h4>
+                </section>
+
+                <div className='resultado'>Resultado: O total é R$0.00</div>
+
+            </main>
+
         </div>
     )
 }
