@@ -1,7 +1,25 @@
 import './index.scss'
 import {Link} from 'react-router-dom'
+import { useState } from 'react'
 
 export default function Exercicio1() {
+    const [pedido, setPedido] = useState()
+    const [cupom, setCupom] = useState()
+    const [resultado, setResultado] = useState()
+
+    function calcular() {
+        let total = Number()
+
+        if (cupom == 'QUERO50') {
+            total = pedido - (0.50 * pedido)
+        } else {
+            total = pedido
+        }
+
+        setResultado(total)
+    }
+
+
     return (
         <div className='pagina-exercicio1 pagina'>
 
@@ -29,13 +47,15 @@ export default function Exercicio1() {
 
                 <section className='aplicacao'>
                     <h4>Informe o valor do pedido</h4>
-                    <input type="text" placeholder='0' />
+                    <input type="text" placeholder='0' value={pedido} onChange={e => setPedido(e.target.value)}/>
+
                     <h4>Informe o valor do cupom</h4>
-                    <input type="text" placeholder='0' />
-                    <h4 className='botao'>Executar</h4>
+                    <input type="text" placeholder='0' value={cupom} onChange={e => setCupom(e.target.value)}/>
+                    
+                    <h4 className='botao' onClick={calcular}>Executar</h4>
                 </section>
 
-                <div className='resultado'>Resultado: O total é R$0.00</div>
+                <div className='resultado' >{`O total do seu pedido é R$${resultado}`}</div>
             </main>
             
         </div>

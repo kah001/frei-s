@@ -22,8 +22,8 @@ export default function Inicio() {
 
                 <div className='exercicios'>
                     <Link className='nolink' to='/ex1'>
-                    <div className='ex1'>
-                        <img src="/assets/images/quadradoA.png" alt="" />
+                    <div className='ex'>
+                        <img className='amarelo' src="/assets/images/quadradoA.png" alt="" />
                         <p>Cupom de Desconto</p>
                         <br />
                         <p>Exercício 1</p>
@@ -31,8 +31,8 @@ export default function Inicio() {
                     </Link>
 
                     <Link className='nolink' to='/ex2'>
-                    <div className='ex2'>
-                        <img src="/assets/images/quadradoV.png" alt="" />
+                    <div className='ex'>
+                        <img className='verde' src="/assets/images/quadradoV.png" alt="" />
                         <p>Converter Kg/Gramas</p>
                         <br />
                         <p>Exercício 2</p>
@@ -40,11 +40,20 @@ export default function Inicio() {
                     </Link>
 
                     <Link className='nolink' to='/ex3'>
-                    <div className='ex3'>
-                        <img src="/assets/images/quadradoAL.png" alt="" />
+                    <div className='ex'>
+                        <img className='azul' src="/assets/images/quadradoAL.png" alt="" />
                         <p>Valor total por quantidade</p>
                         <br />
                         <p>Exercício 3</p>
+                    </div>
+                    </Link>
+
+                    <Link className='nolink' to='/ex4'>
+                    <div className='ex'>
+                        <img className='vermelho' src="/assets/images/quadradoVE.png" alt="" />
+                        <p>Calcular tempo</p>
+                        <br />
+                        <p>Exercício 4</p>
                     </div>
                     </Link>
                 </div>

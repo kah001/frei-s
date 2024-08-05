@@ -1,7 +1,19 @@
+import { useState } from 'react'
 import './index.scss'
 import {Link} from 'react-router-dom'
 
 export default function Exercicio3() {
+    const [pequeno, setPequeno] = useState()
+    const [medio, setMedio] = useState()
+    const [grande, setGrande] = useState()
+    const [resultado, setResultado] = useState()
+
+    function calcular() {
+        let total = (13.00 * pequeno) + (15.00 * medio) + (17.50 * grande)
+
+        setResultado(total)
+    }
+
     return (
         <div className='pagina-exercicio3 pagina'>
 
@@ -29,15 +41,15 @@ export default function Exercicio3() {
 
                 <section className='aplicacao'>
                     <h4>Quantidade pequeno</h4>
-                    <input type="text" placeholder='0' />
+                    <input type="text" placeholder='0' value={pequeno} onChange={e => setPequeno(e.target.value)} />
                     <h4>Quantidade médio</h4>
-                    <input type="text" placeholder='0' />
+                    <input type="text" placeholder='0' value={medio} onChange={e => setMedio(e.target.value)} />
                     <h4>Quantidade grande</h4>
-                    <input type="text" placeholder='0' />
-                    <h4 className='botao'>Executar</h4>
+                    <input type="text" placeholder='0' value={grande} onChange={e => setGrande(e.target.value)} />
+                    <h4 className='botao' onClick={calcular}>Executar</h4>
                 </section>
 
-                <div className='resultado'>Resultado: O total é R$0.00</div>
+                <div className='resultado'>{`O total da sua compra é R$${resultado}`}</div>
             </main>
             
         </div>

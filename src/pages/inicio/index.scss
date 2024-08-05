@@ -11,61 +11,43 @@
         .exercicios {
             display: flex;
             align-items: center;
+            justify-content: center;
             gap: 120px;
-            margin: 60px;
-            margin-top: 20px;
+            margin: 40px;
+            margin-top: 5px;
+            flex-wrap: wrap;
 
             .nolink {
                 text-decoration: none;
             }
     
-            .ex1 {
+            .ex {
                 background-color: #fff;
-                padding: 10px 40px;
+                padding: 30px;
                 border-radius: 10px;
+                margin-bottom: 0px;
 
-                img {
+                .amarelo {
                     width: 100px;
-                    margin-left: 15px;
+                    margin-left: 20px;
                 }
-                p {
-                    text-align: center;
-                    color: #000;
-                }
-            }
-        
-            .ex2 {
-                padding: 10px 40px;
-                background-color: #fff;
-                border-radius: 10px;
-
-                img {
-                    width: 90px;
-                    border-radius: 20px;
+                .verde {
+                    width: 100px;
                     margin-left: 25px;
                 }
-
+                .azul{
+                    width: 100px;
+                    margin-left: 40px;
+                }
+                .vermelho {
+                    width: 100px;
+                }
                 p {
                     text-align: center;
                     color: #000;
                 }
             }
         
-            .ex3 {
-                background-color: #fff;
-                padding: 10px 40px;
-                border-radius: 10px;
-
-                img {
-                    width: 90px;
-                    border-radius: 20px;
-                    margin-left: 40px;
-                }
-                p {
-                    text-align: center;
-                    color: #000;
-                }
-            }
         }
     }
 }

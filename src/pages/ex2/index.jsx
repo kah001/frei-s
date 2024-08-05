@@ -1,7 +1,17 @@
+import { useState } from 'react'
 import './index.scss'
 import {Link} from 'react-router-dom'
 
 export default function Exercicio2() {
+    const [gramas, setGramas] = useState()
+    const [resultado, setResultado] = useState()
+
+    function converter() {
+        let kilos = gramas / 1000
+
+        setResultado(kilos)
+    }
+
     return (
         <div className='pagina-exercicio2 pagina'>
 
@@ -28,11 +38,11 @@ export default function Exercicio2() {
                 
                 <section className='aplicacao'>
                     <h4>Valor em gramas</h4>
-                    <input type="text" placeholder='0' />
-                    <h4 className='botao'>Executar</h4>
+                    <input type="text" placeholder='0' value={gramas} onChange={e => setGramas(e.target.value)} />
+                    <h4 className='botao' onClick={converter}>Executar</h4>
                 </section>
 
-                <div className='resultado'>Resultado: O total é R$0.00</div>
+                <div className='resultado'>{`O valor em kilos é ${resultado}`}</div>
 
             </main>
 
