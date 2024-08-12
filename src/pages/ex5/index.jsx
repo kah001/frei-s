@@ -3,6 +3,17 @@ import { Link } from 'react-router-dom'
 import { useState } from 'react'
 
 export default function Exercicio5() {
+    const [nota1, setNota1] = useState()
+    const [nota2, setNota2] = useState()
+    const [nota3, setNota3] = useState()
+    const [media, setMedia] = useState()
+
+    function calcularMedia() {
+        let m = (nota1 + nota2 + nota3) / 3
+
+        setMedia(m)
+    }
+
     return (
         <div className='pagina-exercicio5 pagina'>
             <header>
@@ -29,15 +40,17 @@ export default function Exercicio5() {
 
                 <section className='aplicacao'>
                     <h4>Nota 01:</h4>
-                    <input type="text" placeholder='0' />
+                    <input type="text" placeholder='0' onChange={e => setNota1(e.target.value)}/>
                     <h4>Nota 02:</h4>
-                    <input type="text" placeholder='0'/>
+                    <input type="text" placeholder='0' onChange={e => setNota2(e.target.value)}/>
                     <h4>Nota 03:</h4>
-                    <input type="text" placeholder='0'/>
-                    <h4 className='botao'>Executar</h4>
+                    <input type="text" placeholder='0' onChange={e => setNota3(e.target.value)}/>
+                    <h4 className='botao' onClick={calcularMedia}>Executar</h4>
                 </section>
 
-                <div className='resultado' ></div>
+                <div className='resultado'>
+                    {media}
+                </div>
             </main>
         </div>
     )
