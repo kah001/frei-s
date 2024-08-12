@@ -12,9 +12,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 120px;
-            margin: 40px;
-            margin-top: 5px;
+            gap: 30px;
             flex-wrap: wrap;
 
             .nolink {
@@ -23,24 +21,35 @@
     
             .ex {
                 background-color: #fff;
-                padding: 30px;
+                padding: 20px;
                 border-radius: 10px;
                 margin-bottom: 0px;
 
                 .amarelo {
                     width: 100px;
-                    margin-left: 20px;
+                    margin: 20px;
                 }
                 .verde {
                     width: 100px;
-                    margin-left: 25px;
+                    margin: 20px;
                 }
                 .azul{
                     width: 100px;
+                    margin: 20px;
+                    border-radius: 20px;
                     margin-left: 40px;
                 }
                 .vermelho {
                     width: 100px;
+                    margin: 20px;
+                }
+                .rosa {
+                    width: 100px;
+                    margin: 20px;
+                }
+                .roxo {
+                    width: 100px;
+                    margin: 20px;
                 }
                 p {
                     text-align: center;

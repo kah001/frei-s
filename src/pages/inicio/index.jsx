@@ -26,7 +26,7 @@ export default function Inicio() {
                         <img className='amarelo' src="/assets/images/quadradoA.png" alt="" />
                         <p>Cupom de Desconto</p>
                         <br />
-                        <p>Exercício 1</p>
+                        <p>Exercício 01</p>
                     </div>
                     </Link>
 
@@ -35,7 +35,7 @@ export default function Inicio() {
                         <img className='verde' src="/assets/images/quadradoV.png" alt="" />
                         <p>Converter Kg/Gramas</p>
                         <br />
-                        <p>Exercício 2</p>
+                        <p>Exercício 02</p>
                     </div>
                     </Link>
 
@@ -44,7 +44,7 @@ export default function Inicio() {
                         <img className='azul' src="/assets/images/quadradoAL.png" alt="" />
                         <p>Valor total por quantidade</p>
                         <br />
-                        <p>Exercício 3</p>
+                        <p>Exercício 03</p>
                     </div>
                     </Link>
 
@@ -53,7 +53,25 @@ export default function Inicio() {
                         <img className='vermelho' src="/assets/images/quadradoVE.png" alt="" />
                         <p>Calcular tempo</p>
                         <br />
-                        <p>Exercício 4</p>
+                        <p>Exercício 04</p>
+                    </div>
+                    </Link>
+
+                    <Link className='nolink' to='/ex5'>
+                    <div className='ex'>
+                        <img className='roxo' src="/assets/images/quadradoRX.png" alt="" />
+                        <p>Média de notas</p>
+                        <br />
+                        <p>Exercício 05</p>
+                    </div>
+                    </Link>
+
+                    <Link className='nolink' to='/ex11'>
+                    <div className='ex'>
+                        <img className='rosa' src="/assets/images/quadradoR.png" alt="" />
+                        <p>Mostrar tabuada</p>
+                        <br />
+                        <p>Exercício 11</p>
                     </div>
                     </Link>
                 </div>
