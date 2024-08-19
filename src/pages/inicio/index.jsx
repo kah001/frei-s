@@ -66,6 +66,15 @@ export default function Inicio() {
                     </div>
                     </Link>
 
+                    <Link className='nolink' to='/ex10'>
+                    <div className='ex'>
+                        <img className='rosa' src="/assets/images/quadradoR.png" alt="" />
+                        <p>Cálculo de IMC</p>
+                        <br />
+                        <p>Exercício 10</p>
+                    </div>
+                    </Link>
+
                     <Link className='nolink' to='/ex11'>
                     <div className='ex'>
                         <img className='rosa' src="/assets/images/quadradoR.png" alt="" />
@@ -74,6 +83,17 @@ export default function Inicio() {
                         <p>Exercício 11</p>
                     </div>
                     </Link>
+
+                    <Link className='nolink' to='/ex12'>
+                    <div className='ex'>
+                        <img className='rosa' src="/assets/images/quadradoR.png" alt="" />
+                        <p>Comparador de Pessoas</p>
+                        <br />
+                        <p>Exercício 12</p>
+                    </div>
+                    </Link>
+
+
                 </div>
             </section>
 

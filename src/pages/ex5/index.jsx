@@ -9,7 +9,7 @@ export default function Exercicio5() {
     const [media, setMedia] = useState()
 
     function calcularMedia() {
-        let m = (nota1 + nota2 + nota3) / 3
+        let m = (Number(nota1) + Number(nota2) + Number(nota3)) / 3
 
         setMedia(m)
     }
