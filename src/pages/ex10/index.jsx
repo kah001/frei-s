@@ -6,8 +6,8 @@ export default function Exercicio10() {
     const [altura, setAltura] = useState()
     const [peso, setPeso] = useState()
     const [resultado, setResultado] = useState()
-    const [situacao, setSituacao] = useState()
-    let [lista, setLista] = useState([])
+    const [situacao, setSituacao] = useState('')
+    const [lista, setLista] = useState([])
 
     function calcularImc() {
         let imc = Number(peso) / (Number(altura) * Number(altura))
@@ -28,7 +28,6 @@ export default function Exercicio10() {
 
         setResultado(`Altura: ${altura} | Peso: ${peso} | Situação: ${situacao}`)
         setLista([...lista, resultado])
-
     } 
 
     return (
@@ -55,23 +54,25 @@ export default function Exercicio10() {
                     <p>Implementar um programa em JavaScript que a partir da altura e do peso de uma pessoa, calcule o IMC e avalie a faixa correspondente a tabela ao lado. Ao final, apresente o IMC e a situação.</p>
                 </section>
 
-                <section className='aplicacao'>
-                    <h4>Altura:</h4>
-                    <input type="text" onChange={e => setAltura(e.target.value)}/>
+                <div className='imc'>
+                    <section className='aplicacao'>
+                        <h4>Altura:</h4>
+                        <input type="text" value={altura} onChange={e => setAltura(e.target.value)}/>
 
-                    <h4>Peso:</h4>
-                    <input type="text" onChange={e => setPeso(e.target.value)}/>
+                        <h4>Peso:</h4>
+                        <input type="text" value={peso} onChange={e => setPeso(e.target.value)}/>
                     
-                    <h4 className='botao' onClick={calcularImc}>Executar</h4>
-                </section>
+                        <h4 className='botao' onClick={calcularImc}>Executar</h4>
+                    </section>
 
-                <div className='resultado'>
-                    {lista.map ((item, pos) =>
+                    <div className='resultado'>
+                        {lista.map ((item, pos) =>
 
-                        <div className='lista'>
-                            <h4 key={pos} >{item}</h4>
-                        </div>
-                    )}
+                            <div className='lista'>
+                                <h4 key={pos}>{item}</h4>
+                            </div>
+                        )}
+                    </div>
                 </div>
             </main>
         </div>

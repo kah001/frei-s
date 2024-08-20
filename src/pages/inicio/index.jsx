@@ -66,6 +66,15 @@ export default function Inicio() {
                     </div>
                     </Link>
 
+                    <Link className='nolink' to='/ex6'>
+                    <div className='ex'>
+                        <img className='rosa' src="/assets/images/quadradoR.png" alt="" />
+                        <p>Salário Líquido</p>
+                        <br />
+                        <p>Exercício 06</p>
+                    </div>
+                    </Link>
+
                     <Link className='nolink' to='/ex10'>
                     <div className='ex'>
                         <img className='rosa' src="/assets/images/quadradoR.png" alt="" />
@@ -77,7 +86,7 @@ export default function Inicio() {
 
                     <Link className='nolink' to='/ex11'>
                     <div className='ex'>
-                        <img className='rosa' src="/assets/images/quadradoR.png" alt="" />
+                        <img className='preto' src="/assets/images/quadradoP.png" alt="" />
                         <p>Mostrar tabuada</p>
                         <br />
                         <p>Exercício 11</p>
