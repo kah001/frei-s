@@ -1,48 +1,49 @@
 import { useState } from 'react'
 import './index.scss'
 import { Link } from 'react-router-dom'
+import Cabecalho from '../../components/cabecalho'
 
 export default function Exercicio10() {
-    const [altura, setAltura] = useState()
-    const [peso, setPeso] = useState()
-    const [resultado, setResultado] = useState()
-    const [situacao, setSituacao] = useState('')
+    const [altura, setAltura] = useState('')
+    const [peso, setPeso] = useState('')
     const [lista, setLista] = useState([])
 
     function calcularImc() {
-        let imc = Number(peso) / (Number(altura) * Number(altura))
-
-        if (imc < 18.5) {
-            setSituacao('Abaixo do Peso')
-        } else if (imc >= 18.5 && imc <= 24.9) {
-            setSituacao('Peso Normal')
-        } else if (imc >= 25 && imc <= 29.9) {
-            setSituacao('Sobrepeso')
-        } else if (imc >= 30 && imc <= 34.9) {
-            setSituacao('Obesidade Grau I')
-        } else if (imc >= 35 && imc <= 39.9) {
-            setSituacao('Obesidade Grau II')
-        } else {
-            setSituacao('Obesidade Grau III')
+        if (altura == '' || peso == '') {
+            return;
         }
 
-        setResultado(`Altura: ${altura} | Peso: ${peso} | Situação: ${situacao}`)
+        let imc = Number(peso) / (Number(altura) * Number(altura))
+        let situacao = ''
+
+        if (imc < 18.5) {
+            situacao = 'Abaixo do Peso'
+        } else if (imc >= 18.5 && imc <= 24.9) {
+            situacao =  'Peso Normal'
+        } else if (imc >= 25 && imc <= 29.9) {
+            situacao = 'Sobrepeso'
+        } else if (imc >= 30 && imc <= 34.9) {
+            situacao = 'Obesidade Grau I'
+        } else if (imc >= 35 && imc <= 39.9) {
+            situacao = 'Obesidade Grau II'
+        } else {
+            situacao = 'Obesidade Grau III'
+        }
+
+        let resultado = `Altura: ${altura} | Peso: ${peso} | Situação: ${situacao}`
         setLista([...lista, resultado])
-    } 
+
+        setAltura('')
+        setPeso('')
+    } function remover(pos) {
+        lista.splice(pos, 1)
+        setLista([...lista])
+    }
 
     return (
-        <div className='pagina-exercicio10 pagina'>
-            <header>
-                <div className='parte1'>
-                    <img src="/assets/images/frei.jpg" alt="" />
-                    <h2>React FreiS</h2>
-                </div>
-
-                <div className='parte2'>
-                    <Link className='nolink' to='/'><h2>Início</h2></Link>
-                    <Link className='nolink' to='/sobre'><h2>Sobre</h2></Link>
-                </div>
-            </header>
+        <div className='pagina-exercicio10'>
+            
+            <Cabecalho />
 
             <main>
                 <section className='titulo'>
@@ -69,8 +70,9 @@ export default function Exercicio10() {
                         {lista.map ((item, pos) =>
 
                             <div className='lista'>
-                                <h4 key={pos}>{item}</h4>
+                                <h4 key={pos}>{item}</h4><i className='fa fa-trash' onClick={() => remover(pos)}></i>
                             </div>
+                            
                         )}
                     </div>
                 </div>

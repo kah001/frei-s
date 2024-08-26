@@ -1,11 +1,79 @@
 .pagina-exercicio12 {
     main {
+        padding: 30px;
+
+        .titulo {
+            display: flex;
+            align-items: center;
+            margin-bottom: 35px;
+            gap: 10px;
+
+            img {
+                width: 50px;
+                border-radius: 30px;
+            }
+        }
+
+        .descricao {
+            padding: 20px;
+            text-align: center;
+            background-color: #fff;
+            width: 1000px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            margin-left: 150px;
+        }
+
+
         .aplicacao {
+            background-color: #fff;
+            width: 300px;
+            padding-left: 50px;
+            padding: 30px;
+            border-radius: 10px;
+            margin-left: 250px;
+
             .checkbox {
                 justify-content: center;
                 gap: 10px;
                 display: flex;
+                align-items: center;
             }
+
+            .botao {
+                margin-top: 20px;
+                margin-left: 150px;
+                margin-right: 0px;
+                padding: 10px;
+                background-color: #847dec;
+                border-radius: 10px;
+                text-align: center;
+                color: #fff;
+            }
+
+
+            input {
+                width: 100%;
+                border: 1px #000 solid;
+                margin-bottom: 10px;
+                padding: 5px;
+                border-radius: 6px;
+            }
+        }
+
+        .resultado {
+            .lista {
+                background-color: #fff;
+                border-radius: 10px;
+                padding: 10px;
+                height: 40px;
+                width: 500px;
+                text-align: start;
+                margin-bottom: 10px;
+                display: flex;
+                gap: 20px;
+            }
+
         }
     }
 }

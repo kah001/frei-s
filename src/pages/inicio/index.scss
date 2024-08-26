@@ -1,6 +1,9 @@
 .pagina-inicio {
 
     section {
+        justify-content: center;
+        align-items: center;
+
         h2 {
             margin: 40px;
         }
@@ -23,38 +26,47 @@
                 border-radius: 10px;
                 margin-bottom: 0px;
 
-                .amarelo {
-                    width: 100px;
-                    margin: 20px;
-                }
-                .verde {
-                    width: 100px;
-                    margin: 20px;
-                    margin-right: 20px;
-                }
-                .azul{
-                    width: 100px;
-                    margin: 20px;
+                .cor {
+                    padding: 60px;
+                    width: 50px;
+                    background-color: #000;
+                    height: 40px;
+                    margin: 10px;
                     border-radius: 20px;
-                    margin-left: 40px;
-                }
-                .vermelho {
-                    width: 100px;
-                    margin: 20px;
+
                 }
                 .rosa {
-                    width: 100px;
-                    margin: 20px;
+                    background-color: pink;
                 }
-                .roxo {
-                    width: 100px;
-                    margin: 20px;
+                .vermelho {
+                    background-color: red;
+                }
+                .azul {
+                    background-color: blue;
+                }
+                .verde {
+                    background-color: green;
+                }
+                .cinza {
+                    background-color: gray;
                 }
                 .preto {
-                    width: 100px;
-                    margin: 20px;
-                    border-radius: 25px;
+                    background-color: black;
                 }
+                .amarelo {
+                    background-color: yellow;
+                }
+                .roxo {
+                    background-color: purple;
+                }
+                .ciano {
+                    background-color: aqua;
+                }
+                .magenta {
+                    background-color: #ed3ad2;
+                }
+
+
                 p {
                     text-align: center;
                     color: #000;

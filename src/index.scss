@@ -16,42 +16,7 @@ body {
       display: flex;
       background-color: #847dec;
 
-      .parte1{
-          display: flex;
-          padding: 15px;
-          padding-left: 50px;
-          align-items: center;
-          gap: 40px;
 
-          img {
-              width: 50px;
-          }
-
-          h2 {
-            color: #fff;
-            font-size: 20px;
-          }
-      }
-
-      .parte2 {
-          display: flex;
-          align-items: center;
-          padding: 15px;
-          padding-right: 40px;
-          margin-left: 800px;
-          gap: 20px;
-
-          .nolink {
-            text-decoration: none;
-          }
-          
-
-          h2 {
-            text-decoration: none;
-            color: #fff;
-            font-size: 20px;
-          }
-      }
   }
 
   main {

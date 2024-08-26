@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './index.scss'
 import { Link } from 'react-router-dom'
+import Cabecalho from '../../components/cabecalho'
 
 export default function Exercicio12() {
     const [nome, setNome] = useState('')
@@ -12,24 +13,19 @@ export default function Exercicio12() {
     const [mediaIdades, setMediaIdades] = useState()
     const [homensMais30, setHomensMais30] = useState()
     const [mulherMenos18, setMulherMenos18] = useState()
+    const [lista, setLista] = useState([])
 
-    function organizarInfo() {
-    
+    function organizarInformacoes() {
+        let pessoa = {
+            nome: nome,
+            idade: idade,
+        }
+
     }
 
     return (
         <div className='pagina-exercicio12 pagina'>
-            <header>
-                <div className='parte1'>
-                    <img src="/assets/images/frei.jpg" alt="" />
-                    <h2>React FreiS</h2>
-                </div>
-
-                <div className='parte2'>
-                    <Link className='nolink' to='/'><h2>Início</h2></Link>
-                    <Link className='nolink' to='/sobre'><h2>Sobre</h2></Link>
-                </div>
-            </header>
+            <Cabecalho />
 
             <main>
                 <section className='titulo'>
@@ -43,10 +39,10 @@ export default function Exercicio12() {
 
                 <section className='aplicacao'>
                     <h4>Nome:</h4>
-                    <input type="text" onChange={e => setNome(e.target.value)}/>
+                    <input type="text" value={nome} onChange={e => setNome(e.target.value)}/>
 
                     <h4>Idade:</h4>
-                    <input type="text" placeholder='0' onChange={e => setIdade(e.target.value)}/>
+                    <input type="text" placeholder='0' value={idade} onChange={e => setIdade(e.target.value)}/>
 
                     <div className='checkbox'>
                         <h4>Sexo:</h4>
@@ -55,7 +51,7 @@ export default function Exercicio12() {
                     
                     </div>
 
-                    <h4 className='botao'>Executar</h4>
+                    <h4 className='botao' onClick={organizarInformacoes}>Executar</h4>
 
                 </section>
 
