@@ -7,13 +7,13 @@ import Exercicio2 from './pages/ex2'
 import Exercicio3 from './pages/ex3'
 import Exercicio4 from './pages/ex4'
 import Exercicio5 from './pages/ex5'
-import Exercicio6 from './pages/ex6';
-import Exercicio7 from './pages/ex7';
-import Exercicio8 from './pages/ex8';
-import Exercicio9 from './pages/ex9';
+import Exercicio6 from './pages/ex6'
+import Exercicio7 from './pages/ex7'
+import Exercicio8 from './pages/ex8'
+import Exercicio9 from './pages/ex9'
+import Exercicio10 from './pages/ex10'
 import Exercicio11 from './pages/ex11'
-import Exercicio10 from './pages/ex10';
-import Exercicio12 from './pages/ex12';
+import Exercicio12 from './pages/ex12'
 
 export default function Navegação() {
     return (
