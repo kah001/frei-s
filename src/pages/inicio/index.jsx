@@ -53,6 +53,27 @@ export default function Inicio() {
                         subtitulo = 'Exercício 06'
                     />
 
+                    <Cards 
+                        pagina = 'ex7'
+                        cor = 'marrom'
+                        titulo = 'Cores primárias'
+                        subtitulo = 'Exercício 07'
+                    />
+                    
+                    <Cards 
+                        pagina = 'ex8'
+                        cor = 'magenta'
+                        titulo = 'Temperatura'
+                        subtitulo = 'Exercício 08'
+                    />
+
+                    <Cards
+                        pagina = 'ex9'
+                        cor = 'laranja'
+                        titulo = 'Sorveteria'
+                        subtitulo = 'Exercício 09'
+                    />
+
                     <Cards
                         pagina = 'ex10'
                         cor = 'amarelo'
@@ -70,7 +91,7 @@ export default function Inicio() {
                     <Cards
                         pagina = 'ex12'
                         cor = 'cinza'
-                        titulo = 'Conparador de pessoas'
+                        titulo = 'Comparador de pessoas'
                         subtitulo = 'Exercício 12'
                     />
 

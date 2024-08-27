@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './index.scss'
-import { Link } from 'react-router-dom'
 import Cabecalho from '../../components/cabecalho'
+import Exercicio from '../../components/exercicio'
 
 export default function Exercicio10() {
     const [altura, setAltura] = useState('')
@@ -42,19 +42,14 @@ export default function Exercicio10() {
 
     return (
         <div className='pagina-exercicio10'>
-            
             <Cabecalho />
+            <Exercicio
+                titulo = 'Exercício 10 - Cálculo de IMC com histórico'
+                descricao = 'Implementar um programa em JavaScript que a partir da altura e do peso de uma pessoa, calcule o IMC e avalie a faixa correspondente a tabela ao lado. Ao final, apresente o IMC e a situação.'
+            />
+
 
             <main>
-                <section className='titulo'>
-                    <Link to='/'><img src="/assets/images/seta esquerda.png" alt="" /></Link>
-                    <h1>Exercício 10 - Cálculo de IMC com histórico</h1>
-                </section>
-
-                <section className='descricao'>
-                    <p>Implementar um programa em JavaScript que a partir da altura e do peso de uma pessoa, calcule o IMC e avalie a faixa correspondente a tabela ao lado. Ao final, apresente o IMC e a situação.</p>
-                </section>
-
                 <div className='imc'>
                     <section className='aplicacao'>
                         <h4>Altura:</h4>

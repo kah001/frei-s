@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './index.scss'
-import {Link} from 'react-router-dom'
 import Cabecalho from '../../components/cabecalho'
+import Exercicio from '../../components/exercicio'
 
 export default function Exercicio2() {
     const [gramas, setGramas] = useState()
@@ -15,17 +15,14 @@ export default function Exercicio2() {
 
     return (
         <div className='pagina-exercicio2 pagina'>
-
             <Cabecalho />
 
+            <Exercicio 
+                titulo = 'Exercício 02 - Converter Kg/Gramas'
+                descricao = 'Implementar um programa em JavaScript para converter kilos em gramas'
+            />
+
             <main>
-                <section className='titulo'>
-                    <Link to='/'><img src="/assets/images/seta esquerda.png" alt="" /></Link>
-                    <h1>Exercício 02 - Converter Kg/gramas</h1>
-                </section>
-                <section className='descricao'>
-                    <p>Implementar um programa em JavaScript para converter kilos em gramas</p>
-                </section>
                 
                 <section className='aplicacao'>
                     <h4>Valor em gramas</h4>

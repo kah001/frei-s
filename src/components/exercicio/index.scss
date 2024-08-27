@@ -1,0 +1,24 @@
+.comp-exercicio {
+    margin: 20px 70px 0px 35px;
+
+    .titulo {
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+        gap: 10px;
+
+        img {
+            width: 50px;
+            border-radius: 30px;
+        }
+    }
+
+    .descricao {
+        padding: 15px;
+        text-align: center;
+        background-color: #fff;
+        width: 1000px;
+        border-radius: 10px;
+        margin-left: 150px;
+    }
+}

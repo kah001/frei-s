@@ -22,27 +22,6 @@ body {
   main {
     padding: 30px;
 
-    .titulo {
-        display: flex;
-        align-items: center;
-        margin-bottom: 35px;
-        gap: 10px;
-
-        img {
-            width: 50px;
-            border-radius: 30px;
-        }
-    }
-    .descricao {
-        padding: 20px;
-        text-align: center;
-        background-color: #fff;
-        width: 1000px;
-        border-radius: 10px;
-        margin-bottom: 15px;
-        margin-left: 150px;
-    }
-
     .aplicacao {
         background-color: #fff;
         width: 300px;

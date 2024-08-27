@@ -1,7 +1,7 @@
 import './index.scss'
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
 import Cabecalho from '../../components/cabecalho'
+import Exercicio from '../../components/exercicio'
 
 export default function Exercicio11() {
     const [tabuada, setTabuada] = useState([])
@@ -16,19 +16,13 @@ export default function Exercicio11() {
 
     return (
         <div className='pagina-exercicio11 pagina'>
-            
             <Cabecalho />
+            <Exercicio
+                titulo = 'Exercício 11 - Tabuada'
+                descricao = 'Implementar um programa em JavaScript que escreva a tabuada de um número informado pelo usuário. A mensagem deve estar em forma de: A x B = X' 
+            />
 
             <main>
-                <section className='titulo'>
-                    <Link to='/'><img src="/assets/images/seta esquerda.png" alt="" /></Link>
-                    <h1>Exercício 11 - Tabuada</h1>
-                </section>
-
-                <section className='descricao'>
-                    <p>Implementar um programa em JavaScript que escreva a tabuada de um número informado pelo usuário. A mensagem deve estar em forma de 'A x B = X</p>
-                </section>
-
                 <section className='aplicacao'>
                     <h4>Tabuada do:</h4>
                     <input type="text" placeholder='0' onChange={e => setNumero(e.target.value)}/>
