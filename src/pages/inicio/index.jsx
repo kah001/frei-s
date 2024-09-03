@@ -94,9 +94,6 @@ export default function Inicio() {
                         titulo = 'Comparador de pessoas'
                         subtitulo = 'Exercício 12'
                     />
-
-
-
                 </div>
             </section>
 

@@ -12,7 +12,7 @@ export default function Exercicio5() {
     function calcularMedia() {
         let m = (Number(nota1) + Number(nota2) + Number(nota3)) / 3
 
-        setMedia(m)
+        setMedia(`A média da aluno é ${m}`)
     }
 
     return (
@@ -35,9 +35,9 @@ export default function Exercicio5() {
                     <h4 className='botao' onClick={calcularMedia}>Executar</h4>
                 </section>
 
-                <div className='resultado'>
-                    {media}
-                </div>
+                { nota1 != '' && nota2 != '' && nota3 != '' &&
+                    <div className='resultado'>{media}</div>
+                }
             </main>
         </div>
     )
