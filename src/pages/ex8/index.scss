@@ -1,0 +1,41 @@
+.pagina {
+    main {
+        .tabela {
+            display: flex;
+            justify-content: center;
+            margin: 10px;
+    
+            .colunas {
+                .titulo {
+                    font-size: 20px;
+                    padding: 5px;
+                    color: #fff;
+                    margin: 2px;
+                    background-color: #ffa500;
+                }
+                p {
+                    padding: 5px;
+                    margin: 2px;
+                }
+    
+                .escuro {
+                    background-color: #ffcd6f;
+                }
+                .claro {
+                    background-color: #ffdb98;
+                }
+    
+    
+                .vermelho {
+                    background-color: #ff0000;
+                }
+                .vermelho-escuro {
+                    background-color: #fc6464;
+                }
+                .vermelho-claro {
+                    background-color: #ff9c9c;
+                }
+            }
+        }
+    }
+}
