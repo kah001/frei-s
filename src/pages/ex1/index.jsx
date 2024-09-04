@@ -17,7 +17,7 @@ export default function Exercicio1() {
             total = pedido
         }
 
-        setResultado(total)
+        setResultado(`O total do seu pedido é ${total}`)
     }
 
 
@@ -41,7 +41,10 @@ export default function Exercicio1() {
                     <h4 className='botao' onClick={calcular}>Executar</h4>
                 </section>
 
-                <div className='resultado' >{`O total do seu pedido é R$${resultado}`}</div>
+                {pedido != '' && cupom != '' &&
+                    <div className='resultado' >{resultado}</div>
+                }
+
             </main>
 
         </div>

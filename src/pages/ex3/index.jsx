@@ -12,7 +12,7 @@ export default function Exercicio3() {
     function calcular() {
         let total = (13.00 * pequeno) + (15.00 * medio) + (17.50 * grande)
 
-        setResultado(total)
+        setResultado(`O total da sua compra é R$${total.toFixed(2)}`)
     }
 
     return (
@@ -34,7 +34,9 @@ export default function Exercicio3() {
                     <h4 className='botao' onClick={calcular}>Executar</h4>
                 </section>
 
-                <div className='resultado'>{`O total da sua compra é R$${resultado}`}</div>
+                { pequeno != '' && medio != '' && grande != '' &&
+                    <div className='resultado'>{resultado}</div>
+                }
             </main>
             
         </div>

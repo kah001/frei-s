@@ -48,7 +48,7 @@ export default function Inicio() {
 
                     <Cards
                         pagina = 'ex6'
-                        cor = 'azul'
+                        cor = 'roxo'
                         titulo = 'Salário líquido'
                         subtitulo = 'Exercício 06'
                     />
@@ -62,7 +62,7 @@ export default function Inicio() {
                     
                     <Cards 
                         pagina = 'ex8'
-                        cor = 'magenta'
+                        cor = 'amarelo'
                         titulo = 'Temperatura'
                         subtitulo = 'Exercício 08'
                     />
@@ -76,14 +76,14 @@ export default function Inicio() {
 
                     <Cards
                         pagina = 'ex10'
-                        cor = 'amarelo'
+                        cor = 'magenta'
                         titulo = 'Cálculo de IMC'
                         subtitulo = 'Exercício 10'
                     />
 
                     <Cards
                         pagina = 'ex11'
-                        cor = 'roxo'
+                        cor = 'azul'
                         titulo = 'Mostrar tabuada'
                         subtitulo = 'Exercício 11'
                     />
@@ -94,6 +94,14 @@ export default function Inicio() {
                         titulo = 'Comparador de pessoas'
                         subtitulo = 'Exercício 12'
                     />
+
+                    <Cards 
+                        pagina = 'ex13'
+                        cor = 'marrom'
+                        titulo = 'Número Primo'
+                        subtitulo = 'Exercício 13'
+                    />
+                    
                 </div>
             </section>
 

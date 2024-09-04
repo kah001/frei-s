@@ -1,7 +1,6 @@
 import './index.scss'
 import Cabecalho from '../../components/cabecalho'
 import Exercicio from '../../components/exercicio'
-import Tabela from '../../components/tabela'
 import { useState } from 'react'
 
 export default function Exercicio8() {

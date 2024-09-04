@@ -10,7 +10,7 @@ export default function Exercicio2() {
     function converter() {
         let kilos = gramas / 1000
 
-        setResultado(kilos)
+        setResultado(`O valor em kilos é ${kilos}`)
     }
 
     return (
@@ -30,7 +30,9 @@ export default function Exercicio2() {
                     <h4 className='botao' onClick={converter}>Executar</h4>
                 </section>
 
-                <div className='resultado'>{`O valor em kilos é ${resultado}`}</div>
+                { gramas != '' &&
+                    <div className='resultado'>{resultado}</div>
+                }
 
             </main>
 

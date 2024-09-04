@@ -14,6 +14,7 @@ import Exercicio9 from './pages/ex9'
 import Exercicio10 from './pages/ex10'
 import Exercicio11 from './pages/ex11'
 import Exercicio12 from './pages/ex12'
+import Exercicio13 from './pages/ex13'
 
 export default function Navegação() {
     return (
@@ -34,6 +35,7 @@ export default function Navegação() {
                     <Route path='/ex10' element= {<Exercicio10/>}></Route>
                     <Route path='/ex11' element= {<Exercicio11/>}></Route>
                     <Route path='/ex12' element= {<Exercicio12/>}></Route>
+                    <Route path='/ex13' element= {<Exercicio13/>}></Route>
                 </Routes>
             </BrowserRouter>
         </React.StrictMode>
