@@ -34,9 +34,7 @@ export default function Exercicio3() {
                     <h4 className='botao' onClick={calcular}>Executar</h4>
                 </section>
 
-                { pequeno != '' && medio != '' && grande != '' &&
-                    <div className='resultado'>{resultado}</div>
-                }
+                <div className='resultado'>{resultado}</div>
             </main>
             
         </div>

@@ -30,9 +30,8 @@ export default function Exercicio2() {
                     <h4 className='botao' onClick={converter}>Executar</h4>
                 </section>
 
-                { gramas != '' &&
-                    <div className='resultado'>{resultado}</div>
-                }
+                <div className='resultado'>{resultado}</div>
+
 
             </main>
 

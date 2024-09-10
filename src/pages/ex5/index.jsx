@@ -35,9 +35,8 @@ export default function Exercicio5() {
                     <h4 className='botao' onClick={calcularMedia}>Executar</h4>
                 </section>
 
-                { nota1 != '' && nota2 != '' && nota3 != '' &&
-                    <div className='resultado'>{media}</div>
-                }
+                <div className='resultado'>{media}</div>
+
             </main>
         </div>
     )

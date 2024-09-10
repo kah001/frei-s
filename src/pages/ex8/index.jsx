@@ -80,10 +80,7 @@ export default function Exercicio8() {
                     <h4 className='botao' onClick={verificarTemperatura}>Executar</h4>
                 </section>
 
-
-                {temperatura != '' &&
-                    <div className='resultado'>{situacao}</div>
-                }
+                <div className='resultado'>{situacao}</div>
             </main>
         </div>
     )

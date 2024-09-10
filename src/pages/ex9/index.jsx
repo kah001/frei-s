@@ -36,9 +36,7 @@ export default function Exercicio9() {
                     <div className='botao' onClick={calcularTotal}>Executar</div>
                 </section>
 
-                { gramas != '' &&
-                    <div className='resultado'>{resultado}</div>
-                }
+                <div className='resultado'>{resultado}</div>
             </main>
         </div>
     )

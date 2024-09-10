@@ -41,9 +41,8 @@ export default function Exercicio6() {
 
                 </section>
 
-                { salarioBase != '' && descontos != '' && bonusPorcentagem != '' &&
-                    <div className='resultado'>{resultado}</div>
-                }
+                <div className='resultado'>{resultado}</div>
+
 
             </main>
         </div>

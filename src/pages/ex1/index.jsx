@@ -41,9 +41,8 @@ export default function Exercicio1() {
                     <h4 className='botao' onClick={calcular}>Executar</h4>
                 </section>
 
-                {pedido != '' && cupom != '' &&
-                    <div className='resultado' >{resultado}</div>
-                }
+                <div className='resultado' >{resultado}</div>
+
 
             </main>
 

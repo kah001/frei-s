@@ -27,7 +27,6 @@ export default function Exercicio7() {
         }
     }
 
-
     return (
         <div className='pagina-exercicio7 pagina'>
             <Cabecalho />
@@ -46,9 +45,8 @@ export default function Exercicio7() {
                     <h4 className='botao' onClick={verificarCores}>Executar</h4>
                 </section>
 
-                { cor1 != '' && cor2 != '' &&
-                    <div className='resultado'>{resultado}</div>
-                }
+                <div className='resultado'>{resultado}</div>
+
             </main>
         </div>
     )
