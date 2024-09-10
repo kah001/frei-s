@@ -95,13 +95,6 @@ export default function Inicio() {
                         subtitulo = 'Exercício 12'
                     />
 
-                    <Cards 
-                        pagina = 'ex13'
-                        cor = 'marrom'
-                        titulo = 'Número Primo'
-                        subtitulo = 'Exercício 13'
-                    />
-                    
                 </div>
             </section>
 
