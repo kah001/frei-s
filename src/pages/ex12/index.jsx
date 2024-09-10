@@ -9,11 +9,6 @@ export default function Exercicio12() {
     const [idade, setIdade] = useState()
     const [masculino, setMasculino] = useState(false)
     const [feminino, setFeminino] = useState(false)
-    const [maisVelho, setMaisVelho] = useState()
-    const [mulherJovem, setMulherJovem] = useState()
-    const [mediaIdades, setMediaIdades] = useState()
-    const [homensMais30, setHomensMais30] = useState()
-    const [mulherMenos18, setMulherMenos18] = useState()
     const [lista, setLista] = useState([])
 
     function organizarInformacoes() {
@@ -32,18 +27,6 @@ export default function Exercicio12() {
             sexo: sexo
         }
 
-        let maiorIdade = 0
-        if (idade >= maiorIdade) {
-            maiorIdade = idade
-            setMaisVelho(nome)
-        }
-
-        let mulher = 100
-        if (feminino == true && idade <= mulher) {
-            mulher = idade
-            setMulherJovem(nome)
-        }
-
         
 
 
@@ -53,8 +36,8 @@ export default function Exercicio12() {
     } function apagar(pos) {
         lista.splice(pos, 1)
         setLista([...lista])
-    } function editar () {
-
+    } function editar (pos) {
+        
     }
 
     return (
@@ -85,10 +68,10 @@ export default function Exercicio12() {
                         <h4 className='botao' onClick={organizarInformacoes}>Executar</h4>
 
                         <div className='info'>
-                            <p>Pessoa mais velha: {maisVelho ?? '?'}</p>
-                            <p>Mulher mais jovem: {mulherJovem ?? '?'}</p>
-                            <p>Homens com mais de 30: {homensMais30 ?? '?'}</p>
-                            <p>Mulheres com menos de 18: {mulherMenos18 ?? '?'}</p>
+                            <p>Pessoa mais velha: </p>
+                            <p>Mulher mais jovem: </p>
+                            <p>Homens com mais de 30: </p>
+                            <p>Mulheres com menos de 18: </p>
                         </div>
 
                     </section>

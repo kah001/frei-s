@@ -7,6 +7,8 @@ export default function Exercicio10() {
     const [altura, setAltura] = useState('')
     const [peso, setPeso] = useState('')
     const [lista, setLista] = useState([])
+    const [editando, setEditando] = useState(-1)
+
 
     function calcularImc() {
         if (altura == '' || peso == '') {
@@ -30,14 +32,27 @@ export default function Exercicio10() {
             situacao = 'Obesidade Grau III'
         }
 
-        let resultado = `Altura: ${altura} | Peso: ${peso} | Situação: ${situacao}`
-        setLista([...lista, resultado])
-
-        setAltura('')
-        setPeso('')
-    } function remover(pos) {
+        if (editando == -1) {
+            let resultado = `Altura: ${altura} | Peso: ${peso} | Situação: ${situacao}`
+            setLista([...lista, resultado])
+    
+            setAltura('')
+            setPeso('')
+        } else {
+            let resultado = `Altura: ${altura} | Peso: ${peso} | Situação: ${situacao}`
+            lista[editando] = resultado 
+            setLista([...lista])
+            setEditando(-1)
+            setAltura('')
+            setPeso('')
+        }
+    } 
+    function remover(pos) {
         lista.splice(pos, 1)
         setLista([...lista])
+    } 
+    function alterar(pos) {
+        
     }
 
     return (
@@ -65,7 +80,7 @@ export default function Exercicio10() {
                         {lista.map ((item, pos) =>
 
                             <div className='lista'>
-                                <h4 key={pos}>{item}</h4><i className='fa fa-trash' onClick={() => remover(pos)}></i>
+                                <h4 key={pos}>{item}</h4><i className='fa fa-trash' onClick={() => remover(pos)}></i><i className='fa fa-pen-to-square' onClick={() => alterar(pos)}></i>
                             </div>
                             
                         )}
